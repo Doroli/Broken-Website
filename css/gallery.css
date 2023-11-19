@@ -1,0 +1,197 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box; box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: inherit;}
+/*-----------------------------------------------------------------------------------*/
+.body {font-family: sans-serif; min-width: 100%; height: 100%}
+.wrapper {display: flex; flex-direction: column; min-height: 100%; overflow: hidden; background-color: rgb(0, 0, 0);}
+.container {max-width: 1920px; margin: 0px auto; padding: 0px 35px;}
+.content {flex: 1 1 auto;}
+/*-----------------------------------------------------------------------------------*/
+
+.header__title {
+    text-align: center;
+    padding: 10px 0px;
+    background-color: rgb(235, 235, 235);
+}
+
+.title.header__title {
+    font-family: 'Carlito';
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.header {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #95062C;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.menu__list {
+    display: flex;
+    list-style: none;
+}
+
+.menu__list ul {
+}
+
+.menu__list li {
+    margin-right: 55px;
+}
+
+.menu__link {
+    font-family:'Istok Web';
+    font-size: 17px;
+    letter-spacing: 4px;
+    color: #FFFFFF;
+    transition: all 0.2s ease-out; 
+}
+
+.menu__link__current {
+    font-family:'Istok Web';
+    font-size: 17px;
+    letter-spacing: 4px;
+    color: gold;
+    transition: all 0.2s ease-out;
+}
+
+.menu__link:hover{
+    color: gold;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.social {
+    display: flex;
+}
+
+.social__link {
+    margin-left: 35px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.gallery {
+    margin-top: 88px;
+}
+
+.gallery__title {
+    text-align: center;
+    font-family: Marmelad;
+    font-size: 40px;
+    padding: 20px 0px;
+    color: #780A27;
+    letter-spacing: 4px;
+}
+
+.block-photo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2px;
+  padding: 0px 20px 40px 20px;
+}
+
+.photo {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.footer {
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 150px 20px 150px;
+}
+
+.footer__block {
+    flex: 0 0 50%;
+}
+
+.footer__link {
+    margin-bottom: 15px;
+}
+
+.footer__link a {
+    font-family: 'Carlito';
+    border-bottom: 1px dotted gray;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: grey;
+    padding-bottom: 3.5px;
+}
+
+.footer__link a:hover {
+    border-bottom: 1px solid gray;
+}
+
+.footer__text {
+    font-family: 'Carlito';
+    font-size: 20px;
+    color: black;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.footer__text a {
+    font-family: 'Carlito';
+    border-bottom: 1px dotted gray;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: grey;
+    padding-bottom: 3.5px;
+}
+
+.footer__text a:hover {
+    border-bottom: 1px solid gray;
+}
+
+.footer__title-bottom {
+    text-align: center;
+    font-family: 'Carlito';
+    font-size: 18px;
+    color: grey;
+    letter-spacing: 3px;
+    margin: 0px 0px 20px 0px;
+}
+
+/*-----------------------------------------------------------------------------------*/
